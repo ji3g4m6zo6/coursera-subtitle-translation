@@ -71,7 +71,7 @@ function getCuesTextList (cues) {
 function getTranslation (words, callback) {
   // 通过谷歌翻译 API 进行翻译，输入待翻译的字符串，返回翻译完成的字符串
   const xhr = new XMLHttpRequest()
-  let url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh&dt=t&q=${encodeURI(words)}`
+  let url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-tw&dt=t&q=${encodeURI(words)}`
   xhr.open('GET', url, true)
   xhr.responseType = 'text'
   xhr.onload = function () {
